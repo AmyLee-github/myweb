@@ -1,0 +1,14 @@
+knife4j:
+  enable: true
+  openapi:
+    group:
+      test1:
+        group-name: 分组名称
+        api-rule: package
+        api-rule-resources:
+          - cn.edu.ctbu.seccontroller
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
