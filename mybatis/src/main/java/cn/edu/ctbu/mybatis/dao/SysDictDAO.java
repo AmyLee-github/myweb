@@ -19,6 +19,8 @@ public interface SysDictDAO {
     @Select("SELECT * FROM sys_dict WHERE id=#{id}")
     public List<SysDictDO> get(int id);
 
-    @Insert("INSERT into sys_dict(name,value)values(#(name),#(value))")
+    @Insert("INSERT into sys_dict(name,value)values(#{name},#{value})")
     public void save(SysDictDO sysDictDO);
+
+    public List<SysDictDO> listType();
 }
